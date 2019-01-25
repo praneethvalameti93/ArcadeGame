@@ -89,8 +89,8 @@ Player.prototype.handleInput = function(key) {
       swal({
         title:"You won the game",
          icon: "success"
-      },function(){console.log("dadad")}
-    )
+      }
+    ).then(confirm=>{location.reload()})
       // location.reload();
     // }, 200)
   // }
