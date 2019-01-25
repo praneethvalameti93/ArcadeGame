@@ -85,12 +85,16 @@ Player.prototype.handleInput = function(key) {
   }
   // if the played tuch the top level then player win the game and start from the bigining
   if (this.y < 60) {
-    setTimeout(() => {
-      alert('You Won The Game');
-      location.reload();
-    }, 200)
-  }
-
+    // setTimeout(() => {
+      swal({
+        title:"You won the game",
+         icon: "success"
+      },function(){console.log("dadad")}
+    )
+      // location.reload();
+    // }, 200)
+  // }
+}
 }
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
